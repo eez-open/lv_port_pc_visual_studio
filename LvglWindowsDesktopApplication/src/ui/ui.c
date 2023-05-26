@@ -5,7 +5,8 @@
 #include "actions.h"
 
 ActionExecFunc actions[] = {
-    0
+    action_save_options,
+    action_load_options,
 };
 
 

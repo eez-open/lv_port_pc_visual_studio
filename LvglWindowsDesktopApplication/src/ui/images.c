@@ -1,33 +1,5 @@
 #include "images.h"
 
-const ext_img_desc_t images[29] = {
-    { "3d_printer_bg", &img_3d_printer_bg },
-    { "arrow_down", &img_arrow_down },
-    { "arrow_left", &img_arrow_left },
-    { "arrow_right", &img_arrow_right },
-    { "arrow_up", &img_arrow_up },
-    { "btn_main_off", &img_btn_main_off },
-    { "btn_main_on", &img_btn_main_on },
-    { "btn_move", &img_btn_move },
-    { "btn_pad_bottom", &img_btn_pad_bottom },
-    { "btn_pad_top", &img_btn_pad_top },
-    { "btn_print", &img_btn_print },
-    { "btn_print_down", &img_btn_print_down },
-    { "btn_print_top_off", &img_btn_print_top_off },
-    { "btn_print_top_on", &img_btn_print_top_on },
-    { "btn_setting", &img_btn_setting },
-    { "btn_z_botton", &img_btn_z_botton },
-    { "btn_z_top", &img_btn_z_top },
-    { "icn_bed", &img_icn_bed },
-    { "icn_head", &img_icn_head },
-    { "icn_pause", &img_icn_pause },
-    { "icn_pc", &img_icn_pc },
-    { "icn_stop", &img_icn_stop },
-    { "icn_time_1", &img_icn_time_1 },
-    { "icn_time_2", &img_icn_time_2 },
-    { "icn_usb", &img_icn_usb },
-    { "icn_wifi", &img_icn_wifi },
-    { "print_view_bg", &img_print_view_bg },
-    { "print_view_front", &img_print_view_front },
-    { "roller_bg", &img_roller_bg },
+const ext_img_desc_t images[1] = {
+    0
 };

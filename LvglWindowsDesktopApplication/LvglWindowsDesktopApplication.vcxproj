@@ -307,6 +307,7 @@
     <ClInclude Include="src\ui\fonts.h" />
     <ClInclude Include="src\ui\images.h" />
     <ClInclude Include="src\ui\screens.h" />
+    <ClInclude Include="src\ui\structs.h" />
     <ClInclude Include="src\ui\styles.h" />
     <ClInclude Include="src\ui\ui.h" />
     <ClInclude Include="src\ui\vars.h" />
@@ -827,6 +828,7 @@
     <ClCompile Include="LVGL.Resource.FontAwesome5Free.c" />
     <ClCompile Include="LVGL.Resource.FontAwesome5FreeLVGL.c" />
     <ClCompile Include="LVGL.Windows.Font.cpp" />
+    <ClCompile Include="src\ui\actions.cpp" />
     <ClCompile Include="src\ui\flow_def.c" />
     <ClCompile Include="src\ui\images.c" />
     <ClCompile Include="src\ui\screens.c" />

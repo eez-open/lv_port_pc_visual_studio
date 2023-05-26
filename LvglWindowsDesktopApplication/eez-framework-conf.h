@@ -3,6 +3,7 @@
 #undef LV_LVGL_H_INCLUDE_SIMPLE
 
 #define HAS_FLOW_SUPPORT 1
+
 #ifndef EEZ_FOR_LVGL
 #define EEZ_FOR_LVGL
 #endif

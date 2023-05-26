@@ -821,6 +821,7 @@
     </ClInclude>
     <ClInclude Include="eez-framework-conf.h" />
     <ClInclude Include="src\ui\styles.h" />
+    <ClInclude Include="src\ui\structs.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha256.c">
@@ -2404,6 +2405,7 @@
     <ClCompile Include="src\ui\ui.c" />
     <ClCompile Include="src\ui\flow_def.c" />
     <ClCompile Include="src\ui\vars.c" />
+    <ClCompile Include="src\ui\actions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="lvgl">

@@ -354,8 +354,8 @@ void LvglDisplayDriverFlushCallback(
 {
     UNREFERENCED_PARAMETER(color_p);
 
-    if (::lv_disp_flush_is_last(disp_drv))
-    {
+    //if (::lv_disp_flush_is_last(disp_drv))
+    //{
         lv_coord_t Width = ::lv_area_get_width(area);
         lv_coord_t Height = ::lv_area_get_height(area);
 
@@ -369,7 +369,7 @@ void LvglDisplayDriverFlushCallback(
             area->x1,
             area->y1,
             SRCCOPY);
-    }
+    //}
 
     ::lv_disp_flush_ready(disp_drv);
 }
@@ -1001,8 +1001,8 @@ void LvglTaskSchedulerLoop()
             g_WindowResizingSignal = false;
         }
 
-        ::lv_timer_handler();
         ui_tick();
+        ::lv_timer_handler();
         ::Sleep(1);
     }
 }
