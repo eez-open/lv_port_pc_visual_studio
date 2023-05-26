@@ -826,3 +826,9 @@
 #endif /*LV_CONF_H*/
 
 #endif /*End of "Content enable"*/
+
+#define LV_IMG_CF_TRUE_COLOR_ALPHA LV_COLOR_FORMAT_ARGB8888
+#define LV_IMG_PX_SIZE_ALPHA_BYTE  4
+#define lv_obj_add_event_cb lv_obj_add_event
+#define lv_mem_alloc lv_malloc
+#define lv_mem_free lv_free

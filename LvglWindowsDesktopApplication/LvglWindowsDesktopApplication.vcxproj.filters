@@ -689,6 +689,138 @@
     <ClInclude Include="LVGL.Windows.Font.h">
       <Filter>LVGL.Windows.Font</Filter>
     </ClInclude>
+    <ClInclude Include="src\ui\actions.h" />
+    <ClInclude Include="src\ui\flow_def.h" />
+    <ClInclude Include="src\ui\fonts.h" />
+    <ClInclude Include="src\ui\images.h" />
+    <ClInclude Include="src\ui\screens.h" />
+    <ClInclude Include="src\ui\ui.h" />
+    <ClInclude Include="src\ui\vars.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\encoder.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\hmi.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\keyboard.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\memory.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\mouse.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\os.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\sound.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\step_values.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\unit.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\utf8.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\util.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\value.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\value_types.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\vars.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\action.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\alloc.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\assets.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\debug.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\eeprom.h">
+      <Filter>eez-framework\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\input.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\line_chart_widget.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl_user_widget.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\roller_widget.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\set_variable.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\switch.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\call_action.h">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\date.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\debugger.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\expression.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\flow.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\flow_defs_v3.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\hooks.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\lvgl_api.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\operations.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\private.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\queue.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\dashboard_api.h">
+      <Filter>eez-framework\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\libs\lz4\lz4.h">
+      <Filter>eez-framework\libs\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\libs\utf8.h">
+      <Filter>eez-framework\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="eez-framework-conf.h" />
+    <ClInclude Include="src\ui\styles.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha256.c">
@@ -2065,6 +2197,213 @@
     <ClCompile Include="LVGL.Windows.Font.cpp">
       <Filter>LVGL.Windows.Font</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\ui_font_small_font.c" />
+    <ClCompile Include="src\ui\ui_image_3d_printer_bg.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_down.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_left.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_right.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_up.c" />
+    <ClCompile Include="src\ui\ui_image_btn_main_off.c" />
+    <ClCompile Include="src\ui\ui_image_btn_main_on.c" />
+    <ClCompile Include="src\ui\ui_image_btn_move.c" />
+    <ClCompile Include="src\ui\ui_image_btn_pad_bottom.c" />
+    <ClCompile Include="src\ui\ui_image_btn_pad_top.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print_down.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print_top_off.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print_top_on.c" />
+    <ClCompile Include="src\ui\ui_image_btn_setting.c" />
+    <ClCompile Include="src\ui\ui_image_btn_z_botton.c" />
+    <ClCompile Include="src\ui\ui_image_btn_z_top.c" />
+    <ClCompile Include="src\ui\ui_image_icn_bed.c" />
+    <ClCompile Include="src\ui\ui_image_icn_head.c" />
+    <ClCompile Include="src\ui\ui_image_icn_pause.c" />
+    <ClCompile Include="src\ui\ui_image_icn_pc.c" />
+    <ClCompile Include="src\ui\ui_image_icn_stop.c" />
+    <ClCompile Include="src\ui\ui_image_icn_time_1.c" />
+    <ClCompile Include="src\ui\ui_image_icn_time_2.c" />
+    <ClCompile Include="src\ui\ui_image_icn_usb.c" />
+    <ClCompile Include="src\ui\ui_image_icn_wifi.c" />
+    <ClCompile Include="src\ui\ui_image_print_view_bg.c" />
+    <ClCompile Include="src\ui\ui_image_print_view_front.c" />
+    <ClCompile Include="src\ui\ui_image_roller_bg.c" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\hmi.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\memory.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\os.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\unit.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\util.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\value.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\action.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\alloc.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\assets.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\debug.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\eeprom.cpp">
+      <Filter>eez-framework\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\end.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\error.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\expr_eval.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\input.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\is_true.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\line_chart_widget.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\log.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\loop.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl_user_widget.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\noop.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\on_event.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\output.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\override_style.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\roller_widget.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\select_language.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\set_page_direction.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\set_variable.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_keyboard.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_keypad.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_message_box.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_page.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\sort_array.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\start.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\switch.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\user_widget.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\watch_variable.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\animate.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\call_action.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\catch_error.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\compare.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\constant.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\counter.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\delay.cpp">
+      <Filter>eez-framework\flow\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\date.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\debugger.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\expression.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\flow.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\hooks.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\lvgl_api.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\operations.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\private.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\queue.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\dashboard_api.cpp">
+      <Filter>eez-framework\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\libs\lz4\lz4.c">
+      <Filter>eez-framework\libs\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\images.c" />
+    <ClCompile Include="src\ui\screens.c" />
+    <ClCompile Include="src\ui\styles.c" />
+    <ClCompile Include="src\ui\ui.c" />
+    <ClCompile Include="src\ui\flow_def.c" />
+    <ClCompile Include="src\ui\vars.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="lvgl">
@@ -2708,6 +3047,24 @@
     </Filter>
     <Filter Include="lvgl\tests\unity">
       <UniqueIdentifier>{5ecd3476-e66c-4504-a56b-43fe62c4d663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eez-framework">
+      <UniqueIdentifier>{8ad0aacd-9f16-48cf-9c25-338b6fb95549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eez-framework\core">
+      <UniqueIdentifier>{f6506c22-326a-424f-b9de-66a9508a6b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eez-framework\flow">
+      <UniqueIdentifier>{85f11849-8f89-4f00-a75f-92ad2b2e6753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eez-framework\flow\components">
+      <UniqueIdentifier>{c5e8546a-f79d-428b-8576-b4dd84885b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eez-framework\libs">
+      <UniqueIdentifier>{01757131-3ec8-4b4e-8b29-a72baf0d50f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eez-framework\libs\lz4">
+      <UniqueIdentifier>{5d9822ec-7a1a-4067-a508-6028b5384da2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

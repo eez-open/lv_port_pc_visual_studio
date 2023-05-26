@@ -11,6 +11,9 @@
 #include <Windows.h>
 #include <windowsx.h>
 
+#define PAGE_WIDTH 800
+#define PAGE_HEIGHT 480
+
 #pragma comment(lib, "Imm32.lib")
 
 #include <cstdint>
@@ -41,6 +44,10 @@
 #endif
 
 #include <LVGL.Windows.Font.h>
+
+extern "C" {
+#include "src/ui/ui.h"
+}
 
 /**
  * @brief Creates a B8G8R8A8 frame buffer.
@@ -315,8 +322,8 @@ EXTERN_C BOOL WINAPI LvglCloseTouchInputHandle(
 
 
 static HINSTANCE g_InstanceHandle = nullptr;
-static int volatile g_WindowWidth = 0;
-static int volatile g_WindowHeight = 0;
+static int volatile g_WindowWidth = PAGE_WIDTH;
+static int volatile g_WindowHeight = PAGE_HEIGHT;
 static HWND g_WindowHandle = nullptr;
 static int volatile g_WindowDPI = USER_DEFAULT_SCREEN_DPI;
 static HDC g_WindowDCHandle = nullptr;
@@ -902,9 +909,9 @@ bool LvglWindowsInitialize(
         L"LVGL Windows Desktop Application Demo",
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT,
-        0,
         CW_USEDEFAULT,
-        0,
+        PAGE_WIDTH + 20,
+        PAGE_HEIGHT + 43,
         nullptr,
         nullptr,
         hInstance,
@@ -995,6 +1002,7 @@ void LvglTaskSchedulerLoop()
         }
 
         ::lv_timer_handler();
+        ui_tick();
         ::Sleep(1);
     }
 }
@@ -1037,7 +1045,8 @@ int WINAPI wWinMain(
         return -1;
     }
 
-    ::lv_demo_widgets();
+    ui_init();
+    //::lv_demo_widgets();
     //::lv_demo_keypad_encoder();
     //::lv_demo_benchmark(LV_DEMO_BENCHMARK_MODE_RENDER_AND_DRIVER);
 

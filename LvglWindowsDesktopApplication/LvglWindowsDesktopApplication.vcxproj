@@ -19,8 +19,14 @@
       <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;EEZ_FOR_LVGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\mvladic\Downloads\lv_port_pc_visual_studio\LvglPlatform\eez-framework\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">C:\Users\mvladic\Downloads\lv_port_pc_visual_studio\LvglPlatform\eez-framework\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\mvladic\Downloads\lv_port_pc_visual_studio\LvglPlatform\eez-framework\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\mvladic\Downloads\lv_port_pc_visual_studio\LvglPlatform\eez-framework\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mvladic\Downloads\lv_port_pc_visual_studio\LvglPlatform\eez-framework\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mvladic\Downloads\lv_port_pc_visual_studio\LvglPlatform\eez-framework\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -250,10 +256,60 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\textarea\lv_textarea.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\action.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\alloc.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\assets.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\debug.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\eeprom.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\encoder.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\hmi.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\keyboard.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\memory.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\mouse.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\os.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\sound.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\step_values.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\unit.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\utf8.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\util.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\value.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\value_types.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\core\vars.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\call_action.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\input.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\line_chart_widget.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl_user_widget.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\roller_widget.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\set_variable.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\components\switch.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\dashboard_api.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\date.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\debugger.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\expression.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\flow.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\flow_defs_v3.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\hooks.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\lvgl_api.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\operations.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\private.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\flow\queue.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\libs\lz4\lz4.h" />
+    <ClInclude Include="..\LvglPlatform\eez-framework\src\eez\libs\utf8.h" />
+    <ClInclude Include="eez-framework-conf.h" />
     <ClInclude Include="LVGL.Resource.FontAwesome5Free.h" />
     <ClInclude Include="LVGL.Resource.FontAwesome5FreeLVGL.h" />
     <ClInclude Include="LVGL.Windows.Font.h" />
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="src\ui\actions.h" />
+    <ClInclude Include="src\ui\flow_def.h" />
+    <ClInclude Include="src\ui\fonts.h" />
+    <ClInclude Include="src\ui\images.h" />
+    <ClInclude Include="src\ui\screens.h" />
+    <ClInclude Include="src\ui\styles.h" />
+    <ClInclude Include="src\ui\ui.h" />
+    <ClInclude Include="src\ui\vars.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha256.c" />
@@ -711,9 +767,102 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\textarea\lv_textarea.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.c" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\action.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\alloc.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\assets.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\debug.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\eeprom.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\hmi.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\memory.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\os.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\unit.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\util.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\core\value.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\animate.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\call_action.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\catch_error.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\compare.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\constant.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\counter.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\delay.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\end.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\error.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\expr_eval.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\input.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\is_true.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\line_chart_widget.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\log.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\loop.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\lvgl_user_widget.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\noop.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\on_event.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\output.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\override_style.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\roller_widget.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\select_language.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\set_page_direction.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\set_variable.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_keyboard.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_keypad.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_message_box.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\show_page.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\sort_array.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\start.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\switch.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\user_widget.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\components\watch_variable.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\dashboard_api.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\date.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\debugger.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\expression.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\flow.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\hooks.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\lvgl_api.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\operations.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\private.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\flow\queue.cpp" />
+    <ClCompile Include="..\LvglPlatform\eez-framework\src\eez\libs\lz4\lz4.c" />
     <ClCompile Include="LVGL.Resource.FontAwesome5Free.c" />
     <ClCompile Include="LVGL.Resource.FontAwesome5FreeLVGL.c" />
     <ClCompile Include="LVGL.Windows.Font.cpp" />
+    <ClCompile Include="src\ui\flow_def.c" />
+    <ClCompile Include="src\ui\images.c" />
+    <ClCompile Include="src\ui\screens.c" />
+    <ClCompile Include="src\ui\styles.c" />
+    <ClCompile Include="src\ui\ui.c" />
+    <ClCompile Include="src\ui\ui_font_small_font.c" />
+    <ClCompile Include="src\ui\ui_image_3d_printer_bg.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_down.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_left.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_right.c" />
+    <ClCompile Include="src\ui\ui_image_arrow_up.c" />
+    <ClCompile Include="src\ui\ui_image_btn_main_off.c" />
+    <ClCompile Include="src\ui\ui_image_btn_main_on.c" />
+    <ClCompile Include="src\ui\ui_image_btn_move.c" />
+    <ClCompile Include="src\ui\ui_image_btn_pad_bottom.c" />
+    <ClCompile Include="src\ui\ui_image_btn_pad_top.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print_down.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print_top_off.c" />
+    <ClCompile Include="src\ui\ui_image_btn_print_top_on.c" />
+    <ClCompile Include="src\ui\ui_image_btn_setting.c" />
+    <ClCompile Include="src\ui\ui_image_btn_z_botton.c" />
+    <ClCompile Include="src\ui\ui_image_btn_z_top.c" />
+    <ClCompile Include="src\ui\ui_image_icn_bed.c" />
+    <ClCompile Include="src\ui\ui_image_icn_head.c" />
+    <ClCompile Include="src\ui\ui_image_icn_pause.c" />
+    <ClCompile Include="src\ui\ui_image_icn_pc.c" />
+    <ClCompile Include="src\ui\ui_image_icn_stop.c" />
+    <ClCompile Include="src\ui\ui_image_icn_time_1.c" />
+    <ClCompile Include="src\ui\ui_image_icn_time_2.c" />
+    <ClCompile Include="src\ui\ui_image_icn_usb.c" />
+    <ClCompile Include="src\ui\ui_image_icn_wifi.c" />
+    <ClCompile Include="src\ui\ui_image_print_view_bg.c" />
+    <ClCompile Include="src\ui\ui_image_print_view_front.c" />
+    <ClCompile Include="src\ui\ui_image_roller_bg.c" />
+    <ClCompile Include="src\ui\vars.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\.devcontainer\devcontainer.json" />

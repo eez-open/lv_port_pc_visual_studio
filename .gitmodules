@@ -4,3 +4,6 @@
 [submodule "LvglPlatform/freetype"]
 	path = LvglPlatform/freetype
 	url = https://github.com/freetype/freetype
+[submodule "LvglPlatform/eez-framework"]
+	path = LvglPlatform/eez-framework
+	url = https://github.com/eez-open/eez-framework
